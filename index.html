@@ -30,9 +30,11 @@
     </div>
 
     <div class="input-section">
+    <div class="input-container">
         <p class="input-header">Let's do this!</p>
 
         <form action="#signup" method="post">
+            <div class="input-box-layout">
             <div class="input-box">
                  <label for="first-name">FIRST NAME</label>
                  <input type="text" id="first-name" name="firstName">
@@ -55,14 +57,15 @@
 
             <div class="input-box">
               <label for="password">PASSWORD</label>
-              <input type="password" id="password" name="password" minlength="8">
+              <input type="password" id="password" name="password" minlength="8" required>
             </div>
 
             <div class="input-box">
              <label for="confirm-password">CONFIRM PASSWORD</label>
-             <input type="password" id="confirm-password" name="confirmPassword" minlength="8">
+             <input type="password" id="confirm-password" name="confirmPassword" minlength="8" required>
             </div>
-
+            </div>
+        </div>
             <button type="submit">Create Account</button>
         </form>
     </div>

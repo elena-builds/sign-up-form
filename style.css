@@ -6,7 +6,18 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 .page-layout {
@@ -21,6 +32,7 @@ body {
   flex: 1.5;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: relative;
   background-color: #f9fafb;
 }
@@ -69,21 +81,81 @@ body {
 }
 
 .description-section {
-  font-weight: 700;
-  position: absolute;
-  top: 10%;
-  left: 5%;
+  font-weight: 500;
+  margin-left: 5%;
+  margin-bottom: 30px;
 }
 
-.input-section {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 30%;
+.input-container {
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding-left: 5%;
 
   display: flex;
   flex-direction: column;
-  padding: 5%, 10%;
+  margin-bottom: 30px;
+}
+
+.input-header {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.input-box-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 40px;
+  margin-bottom: 40px;
+}
+
+.input-box {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  gap: 4px;
+}
+
+.input-box input {
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+}
+
+.input-box input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.input-box input:invalid {
+  border: 1px solid #ee0000;
+}
+
+button[type="submit"] {
+  color: white;
+  font-weight: 500;
+  background-color: darkcyan;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+
+.log-in-section {
+  font-size: 14px;
+  margin-left: 5%;
+  margin-bottom: 40px;
+}
+.log-in {
+  margin: 0px;
+}
+.log-in a {
+  text-decoration: none;
+  color: darkcyan;
 }
